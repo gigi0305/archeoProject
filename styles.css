@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: "Lato", sans-serif, serif;
+    background: #fff;
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+a{
+    color: #262626;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+}
+
+/* Nav */
+.main-nav{
+    display: flex;
+    align-items: center;
+    height:60px;
+    padding:20p 0;
+    font-size:13px;
+}
+
+.logo{
+    font-weight: 500; font-size: 20px; list-style: none;
+}
+
+.main-nav ul{
+    display: flex;
+}
+
+.main-nav ul li{
+    padding:0px 10px;
+}
+
+.main-nav ul li a{
+    padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover{
+    border-bottom: 2px solid #262626;
+}
+
+.main-nav ul.main-menu{
+    flex:1;
+    margin-left: 20px;
+    margin-top: 15px;
+    
+}
+
+.right-menu{margin-top: 15px;}
+
+.icon{
+    width: 25px;
+    height: 25px;
+}
+
+.hamburger{display: none;}
+
+@media (max-width: 768px){
+    .main-menu{position: absolute;
+             top:0; 
+             right:-100%;
+             background:black;
+             height: 100vh; 
+             padding-top: 80px;
+             display: block;}
+
+    .main-menu li{display:block;}
+    .main-menu--open{right:-0%;}
+
+    .hamburger{display:block;
+     width: 30px; height: 40px;
+     position: absolute; top:15px; right:40px;}
+    .hamburger span{background:black; height: 4px; width:100%;
+    display: block; margin-top: 4px;}
+}
+
+/* CAROUSEL */
+
+.carousel-inner > .carousel-item {
+    min-height: 350px;
+    background-size: cover; 
+    background-position: center center; 
+    margin-bottom: 30px; margin-top: 10px;}
+
+/* HOME CARDS */
+
+.card img{
+    height: 180px;
+}
+ 
